@@ -102,7 +102,9 @@ h2 { color: #666; font-weight: 300; }
     border: 1px solid #e1e4e8;
     border-radius: 12px;
     overflow: hidden;
-    transition: box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .mini-card:hover {
@@ -110,10 +112,18 @@ h2 { color: #666; font-weight: 300; }
 }
 
 .mini-card img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-bottom: 1px solid #eee;
+    width: 100%;       
+    height: 160px;    
+    object-fit: cover;  
+    object-position: top; 
+    display: block;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    align-items: start; /* Evita que las tarjetas se estiren verticalmente de forma desigual */
 }
 
 .placeholder-img {
