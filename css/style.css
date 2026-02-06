@@ -1,3 +1,9 @@
+header {
+    position: relative;
+    z-index: 1000;
+    background: white;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
