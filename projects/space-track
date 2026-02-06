@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Debris & Orbital Congestion | Zoireth Liendo</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../assets/images/logo.png" alt="Zoireth Liendo" style="height: 40px;">
+            </div>
+            <ul>
+                <li><a href="../index.html">About</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="project-header">
+            <h1>The Invisible Traffic Jam</h1>
+            <p class="subtitle">
+                A data-driven exploration of space debris, orbital congestion, and the growing risks around Earth.
+            </p>
+        </section>
+
+        <!-- STORY INTRO -->
+        <section class="analysis-block">
+            <h3>Executive Overview</h3>
+            <p>
+                Earth’s orbit is no longer empty. Decades of launches have created a dense and growing population of
+                satellites, debris, and inactive payloads. This project analyzes orbital objects to understand
+                how we got here, where the risks concentrate, and what the future may look like.
+            </p>
+        </section>
+
+        <!-- TABLEAU EMBED -->
+        <section class="analysis-block">
+            <h3>Interactive Data Story</h3>
+
+            <iframe
+                src="https://public.tableau.com/views/SpaceTrack/6?:showVizHome=no"
+                width="100%"
+                height="900"
+                frameborder="0"
+                allowfullscreen
+                style="border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+            </iframe>
+
+            <p style="margin-top: 10px; font-size: 0.9rem; color: #555;">
+                Interactive Tableau story exploring orbital object composition, historical growth,
+                congestion zones, national responsibility, and future projections.
+            </p>
+        </section>
+
+        <!-- KEY INSIGHTS -->
+        <section cl
