@@ -5,11 +5,11 @@
     --accent-color: #4f46e5;
     --link-hover: #3730a3;
     --bg-light: #ffffff;
-    --bg-dark: #1e1e1e;      /* gris oscuro más suave que #121212 */
+    --bg-dark: #2c2c2c;      /* gris oscuro más suave, cálido y menos fuerte */
     --card-light: #f9f9f9;
-    --card-dark: #2a2a2a;    /* ligeramente más claro que el bg-dark para contraste */
+    --card-dark: #383838;    /* ligeramente más claro que bg-dark para tarjetas */
     --text-light: #111111;
-    --text-dark: #e0e0e0;    /* un gris claro más suave que #eee */
+    --text-dark: #dddddd;    /* gris claro, menos duro que blanco puro */
 }
 
 /* =========================
