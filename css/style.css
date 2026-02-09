@@ -1,5 +1,17 @@
 /* Header - para todas las páginas */
 header {
+    position: relative;
+    background: white;
+    margin: -20px -20px 20px -20px;
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+nav {
+    max-width: 800px;
+    margin: 0 auto;
+}
+header {
     background: white;
     border-bottom: 1px solid #ddd;
     position: sticky;
@@ -13,10 +25,8 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
 }
 
 .logo img {
@@ -28,10 +38,7 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
-    margin: 0;
-    padding: 0;
 }
-
 nav a {
     text-decoration: none;
     color: #444;
@@ -43,7 +50,9 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
-    margin: 0;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
     background-color: #f9f9f9;
 }
 
@@ -56,9 +65,7 @@ main {
 
 /* Hero section - Para el index */
 #hero {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 60px 20px;
+    padding: 60px 0;
     text-align: center;
 }
 
