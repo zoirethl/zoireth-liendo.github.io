@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operations & Analytics</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
+
+    <!-- HEADER -->
     <header>
         <nav>
            <div class="logo">
@@ -10,16 +17,16 @@
             <ul>
                 <li><a href="index.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="assets/zoireth-liendo-cv.pdf" target="_blank">Resume</a></li>
+                <!-- Iconos adicionales -->
+                <li><a href="index-es.html" title="Español" class="nav-icon">🌎 ES</a></li>
+                <li>
+                    <button id="theme-toggle" class="nav-icon" title="Toggle Light/Dark Mode">🔆</button>
+                </li>
             </ul>
         </nav>
     </header>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Operations & Analytics</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+
+     <!-- HERO -->
     <main>
         <section id="hero">
             <h1>Zoireth Liendo</h1>
@@ -27,6 +34,7 @@
             <p>Bridging the gap between Customer Success, Operations, and Data Insights.</p>
         </section>
 
+    <!-- ABOUT -->
         <section id="about">
         <h3>Professional Profile</h3>
         <p>
@@ -39,10 +47,12 @@
             <ul>
                 <li><strong>Operations:</strong> CS Ops, Implementation Management, Capacity Planning.</li>
                 <li><strong>Data & Analytics:</strong> SQL (Advanced), Looker, Tableau, Power BI.</li>
-                <li><strong>Leadership:</strong> Recognized as MVP (2020, 2021, 2023) for high-performance program management.</li>
+                <li><strong>Leadership:</strong> Recognized as MVP (2020, 2021, 2023) for high-performance program management by Teleperformance Colombia with Cisco.</li>
             </ul>
         </div>
     </section>
+
+    <!-- FEATURED PROJECTS -->
     <section id="featured-projects">
     <h3>Featured Projects</h3>
     <div class="project-grid">
@@ -68,17 +78,78 @@
     </div>
 </div>
 
-
-        <div class="mini-card">
-            <div class="placeholder-img">📊</div>
-            <div class="mini-card-content">
-                <h4>CS KPI Framework</h4>
-                <p>Design and implementation of health scoring models for SaaS environments.</p>
-                <a href="#" class="link-btn disabled">Coming Soon</a>
-            </div>
-        </div>
-
     </div>
-</section>
-</main>
+        
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-icons">
+        <a href="mailto:zoirethl@gmail.com" title="Email">
+            <img 
+                src="assets/images/gmail.png" 
+                alt="Email"
+                class="footer-icon"
+            >
+        </a>
+
+        <a href="https://www.linkedin.com/in/zoireth/" 
+           target="_blank" 
+           title="LinkedIn">
+            <img 
+                src="assets/images/InBug-Black.png" 
+                alt="LinkedIn"
+                class="footer-icon"
+                id="linkedin-icon"
+            >
+        </a>
+    </div>
+        <pp>&copy; 2026 Zoireth Liendo. All rights reserved.</pp>
+    </footer>
+
+
+<!-- SCRIPT LIGHT/DARK MODE -->
+    <script>
+        const toggleBtn = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        // Detectar preferencia inicial del usuario
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            body.classList.add('dark-mode');
+            toggleBtn.textContent = '🌒';
+        } else {
+            body.classList.remove('dark-mode');
+            toggleBtn.textContent = '🔆';
+        }
+
+        // Toggle manual
+        toggleBtn.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            toggleBtn.textContent = body.classList.contains('dark-mode') ? '🌒' : '🔆';
+        });
+    </script>
+
+<!-- SCRIPT ICON LIGHT/DARK -->
+<script>
+const linkedinIcon = document.getElementById('linkedin-icon');
+
+function updateLinkedInIcon() {
+    if (document.body.classList.contains('dark-mode')) {
+        linkedinIcon.src = 'assets/images/InBug-White.png';
+    } else {
+        linkedinIcon.src = 'assets/images/InBug-Black.png';
+    }
+}
+
+// Actualizar icono cuando cambia el tema
+document.getElementById('theme-toggle').addEventListener('click', updateLinkedInIcon);
+
+// Detectar tema del sistema al cargar
+window.addEventListener('DOMContentLoaded', () => {
+    updateLinkedInIcon();
+});
+</script>
+
+
 </body>
+</html>

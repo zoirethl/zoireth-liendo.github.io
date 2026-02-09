@@ -1,105 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="../assets/images/logo.png" alt="Zoireth Liendo" style="height: 40px;">
-            </div>
-            <ul>
-                <li><a href="../index.html">About</a></li>
-                <li><a href="../projects.html">Projects</a></li>
-            </ul>
-        </nav>
-    </header>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Olist Analysis | Zoireth Liendo</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
-    <main>
-        <section class="project-header">
-            <h1>Olist E-commerce Strategy & Operations Analysis</h1>
-            <p class="subtitle">Data-driven insights to optimize logistics and customer lifetime value.</p>
-        </section>
+<body>
 
-        <section class="analysis-block">
-            <h3>1. Executive Overview</h3>
-            <div class="project-image">
-                <img src="../assets/images/olist-executive.png" alt="Executive Overview Dashboard" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-            </div>
-            <ul>
-                <li><strong>Sales Seasonality:</strong> Sharp performance peaks between May and August, followed by a decline in September.
-                    <br><em>Why it matters:</em> Revenue relies on volume fluctuations rather than price adjustments.
-                    <br><em>Business impact:</em> High exposure to seasonal volatility; requires a more balanced revenue stream throughout the year.</li>
-            </ul>
-        </section>
+<!-- HEADER -->
+<header>
+    <nav>
+        <div class="logo">
+            <img src="../assets/images/logo.png" alt="Zoireth Liendo" style="height: 40px;">
+        </div>
+        <ul>
+            <li><a href="../index.html">About</a></li>
+            <li><a href="../projects.html" class="active">Projects</a></li>
+            <li><a href="olist-es.html" title="Español" class="nav-icon">🌎 ES</a></li>
+            <li>
+                <button id="theme-toggle" class="nav-icon" title="Toggle Light/Dark Mode">🔆</button>
+            </li>
+        </ul>
+    </nav>
+</header>
 
-        <section class="analysis-block">
-            <h3>2. Customer & Order Behavior</h3>
-            <div class="project-image">
-                <img src="../assets/images/olist-customers.png" alt="Customer Behavior Dashboard" style="width: 100%; border-radius: 8px; margin: 20px 0;">
-            </div>
-            <ul>
-                <li><strong>Retention Gap:</strong> Recurring customers represent a small fraction of the base but have a significantly higher average spend.
-                    <br><em>Why it matters:</em> Acquisition costs are likely high compared to the untapped value of existing customers.
-                    <br><em>Business impact:</em> Increasing the retention rate by even 5% could disproportionately scale total revenue without increasing marketing spend.</li>
-            </ul>
-        </section>
+<main>
+    <!-- PROJECT HERO -->
+    <section class="project-header">
+        <h1>Olist E-commerce Strategy & Operations Analysis</h1>
+        <p class="subtitle">Data-driven insights to optimize logistics and customer lifetime value.</p>
+    </section>
 
-        <section class="analysis-block">
-            <h3>3. Product Performance Overview</h3>
-            <div class="project-image">
-                <img src="../assets/images/olist-products.png" alt="Product Performance Dashboard" style="width: 100%; border-radius: 8px; margin: 20px 0;">
-            </div>
-            <ul>
-                <li><strong>Category Concentration:</strong> A few "Hero" categories drive the majority of revenue, while high-volume items often show thin margins.
-                    <br><em>Why it matters:</em> Over-reliance on a few products creates a single point of failure.
-                    <br><em>Business impact:</em> Need for pricing optimization in high-volume/low-margin categories to improve overall profitability.</li>
-            </ul>
-        </section>
+    <!-- ANALYSIS BLOCKS -->
+    <section class="analysis-block">
+        <h3>1. Executive Overview</h3>
+        <div class="project-image">
+            <img src="../assets/images/olist-executive.png" alt="Executive Overview Dashboard">
+        </div>
+        <ul>
+            <li><strong>Sales Seasonality:</strong> Sharp performance peaks between May and August, followed by a decline in September.
+                <br><em>Why it matters:</em> Revenue relies on volume fluctuations rather than price adjustments.
+                <br><em>Business impact:</em> High exposure to seasonal volatility; requires a more balanced revenue stream throughout the year.</li>
+        </ul>
+    </section>
 
-        <section class="analysis-block">
-            <h3>4. Delivery & Logistics</h3>
-            <div class="project-image">
-                <img src="../assets/images/olist-logistics.png" alt="Logistics Dashboard" style="width: 100%; border-radius: 8px; margin: 20px 0;">
-            </div>
-            <ul>
-                <li><strong>Logistics Risk:</strong> Late deliveries cluster around higher freight values and specific regions.
-                    <br><em>Why it matters:</em> Shipping costs increase without improving delivery speed.
-                    <br><em>Business impact:</em> Margin erosion and lower customer satisfaction in high-value orders.</li>
-            </ul>
-        </section>
+    <section class="analysis-block">
+        <h3>2. Customer & Order Behavior</h3>
+        <div class="project-image">
+            <img src="../assets/images/olist-customers.png" alt="Customer Behavior Dashboard">
+        </div>
+        <ul>
+            <li><strong>Retention Gap:</strong> Recurring customers represent a small fraction of the base but have a significantly higher average spend.
+                <br><em>Why it matters:</em> Acquisition costs are likely high compared to the untapped value of existing customers.
+                <br><em>Business impact:</em> Increasing the retention rate by even 5% could disproportionately scale total revenue without increasing marketing spend.</li>
+        </ul>
+    </section>
 
-        <hr>
+    <section class="analysis-block">
+        <h3>3. Product Performance Overview</h3>
+        <div class="project-image">
+            <img src="../assets/images/olist-products.png" alt="Product Performance Dashboard">
+        </div>
+        <ul>
+            <li><strong>Category Concentration:</strong> A few "Hero" categories drive the majority of revenue, while high-volume items often show thin margins.
+                <br><em>Why it matters:</em> Over-reliance on a few products creates a single point of failure.
+                <br><em>Business impact:</em> Need for pricing optimization in high-volume/low-margin categories to improve overall profitability.</li>
+        </ul>
+    </section>
 
-        <section id="recommendations">
-            <h3>Strategic Recommendations</h3>
-            <div class="rec-card">
-                <h4>Customer Strategy</h4>
-                <p>Pilot loyalty programs focused on the top 20% of recurring customers by revenue to maximize LTV.</p>
-            </div>
-            <div class="rec-card">
-                <h4>Operational Efficiency</h4>
-                <p>Perform a deep-dive into regional logistics partners where freight costs are high but delivery times are sub-optimal.</p>
-            </div>
-        </section>
+    <section class="analysis-block">
+        <h3>4. Delivery & Logistics</h3>
+        <div class="project-image">
+            <img src="../assets/images/olist-logistics.png" alt="Logistics Dashboard">
+        </div>
+        <ul>
+            <li><strong>Logistics Risk:</strong> Late deliveries cluster around higher freight values and specific regions.
+                <br><em>Why it matters:</em> Shipping costs increase without improving delivery speed.
+                <br><em>Business impact:</em> Margin erosion and lower customer satisfaction in high-value orders.</li>
+        </ul>
+    </section>
 
-        <section id="skills" style="background: #f0f4f8; padding: 20px; border-radius: 8px; margin-top: 40px;">
-            <h3>Tools & Skills Applied</h3>
-            <ul style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
-                <li><strong>Power BI:</strong> Data modeling, DAX measures, custom KPIs</li>
-                <li><strong>Analysis:</strong> Exploratory & Diagnostic Analysis</li>
-                <li><strong>Operations:</strong> Business & Operations Analytics</li>
-                <li><strong>Data Storytelling:</strong> Executive-level reporting</li>
-            </ul>
-        </section>
+    <hr>
 
-      <section id="download" style="text-align: center; margin-top: 40px;">
-    <a href="https://drive.google.com/uc?export=download&id=1A9EdOzuKgbA68wa3rfxYjnJAEXbeLjd9" class="btn" target="_blank">Download Full Power BI Report (.pbix)</a>
-</section>
-    </main>
+    <!-- RECOMMENDATIONS -->
+    <section id="recommendations">
+        <h3>Strategic Recommendations</h3>
+        <div class="rec-card">
+            <h4>Customer Strategy</h4>
+            <p>Pilot loyalty programs focused on the top 20% of recurring customers by revenue to maximize LTV.</p>
+        </div>
+        <div class="rec-card">
+            <h4>Operational Efficiency</h4>
+            <p>Perform a deep-dive into regional logistics partners where freight costs are high but delivery times are sub-optimal.</p>
+        </div>
+    </section>
+
+    <!-- TOOLS & SKILLS -->
+    <section id="skills" style="background: #f0f4f8; padding: 20px; border-radius: 8px; margin-top: 40px;">
+        <h3>Tools & Skills Applied</h3>
+        <ul style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+            <li><strong>Power BI:</strong> Data modeling, DAX measures, custom KPIs</li>
+            <li><strong>Analysis:</strong> Exploratory & Diagnostic Analysis</li>
+            <li><strong>Operations:</strong> Business & Operations Analytics</li>
+            <li><strong>Data Storytelling:</strong> Executive-level reporting</li>
+        </ul>
+    </section>
+
+    <section id="download" style="text-align: center; margin-top: 40px;">
+        <a href="https://drive.google.com/uc?export=download&id=1A9EdOzuKgbA68wa3rfxYjnJAEXbeLjd9" class="btn" target="_blank">Download Full Power BI Report (.pbix)</a>
+    </section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-icons">
+        <a href="mailto:zoirethl@gmail.com" title="Email">
+            <img src="../assets/images/gmail.png" alt="Email" class="footer-icon">
+        </a>
+        <a href="https://www.linkedin.com/in/zoireth/" target="_blank" title="LinkedIn">
+            <img src="../assets/images/InBug-Black.png" alt="LinkedIn" class="footer-icon" id="linkedin-icon">
+        </a>
+    </div>
+    <p>&copy; 2026 Zoireth Liendo. All rights reserved.</p>
+</footer>
+
+<!-- SCRIPT LIGHT/DARK MODE -->
+<script>
+const toggleBtn = document.getElementById('theme-toggle');
+const body = document.body;
+
+if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    body.classList.add('dark-mode');
+    toggleBtn.textContent = '🌒';
+} else {
+    toggleBtn.textContent = '🔆';
+}
+
+toggleBtn.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    toggleBtn.textContent = body.classList.contains('dark-mode') ? '🌒' : '🔆';
+    updateLinkedInIcon();
+});
+</script>
+
+<!-- SCRIPT ICON LIGHT/DARK -->
+<script>
+const linkedinIcon = document.getElementById('linkedin-icon');
+
+function updateLinkedInIcon() {
+    linkedinIcon.src = document.body.classList.contains('dark-mode') ?
+        '../assets/images/InBug-White.png' :
+        '../assets/images/InBug-Black.png';
+}
+
+window.addEventListener('DOMContentLoaded', updateLinkedInIcon);
+</script>
+
 </body>
 </html>

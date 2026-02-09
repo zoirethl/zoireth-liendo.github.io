@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones & Analítica</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <nav>
+           <div class="logo">
+                <img src="assets/images/logo.png" alt="Zoireth Liendo" style="height: 40px;">
+           </div>
+            <ul>
+                <li><a href="index-es.html">Sobre mí</a></li>
+                <li><a href="projects-es.html">Proyectos</a></li>
+                <!-- Iconos adicionales -->
+                <li><a href="index.html" title="English" class="nav-icon">🌎 EN</a></li>
+                <li>
+                    <button id="theme-toggle" class="nav-icon" title="Cambiar tema claro/oscuro">🔆</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+     <!-- HERO -->
+    <main>
+        <section id="hero">
+            <h1>Zoireth Liendo</h1>
+            <h2>Gerente de Operaciones y Analítica</h2>
+            <p>Conectando Customer Success, Operaciones y análisis de datos para impulsar decisiones estratégicas.</p>
+        </section>
+
+    <!-- ABOUT -->
+        <section id="about">
+            <h3>Perfil Profesional</h3>
+            <p>
+                Profesional en Operaciones y Analítica con más de 5 años de experiencia.
+                Me especializo en el diseño de frameworks de KPIs, mejora de la velocidad de implementación
+                y habilitación de equipos de Customer Success mediante análisis avanzado de datos.
+            </p>
+        
+            <div class="skills-summary">
+                <h4>Áreas de Especialización</h4>
+                <ul>
+                    <li><strong>Operaciones:</strong> CS Ops, Gestión de Implementaciones, Planificación de Capacidad.</li>
+                    <li><strong>Datos & Analítica:</strong> SQL (Avanzado), Looker, Tableau, Power BI.</li>
+                    <li><strong>Liderazgo:</strong> Reconocida como MVP (2020, 2021, 2023) por gestión de programas de alto rendimiento en Teleperformance Colombia con Cisco.</li>
+                </ul>
+            </div>
+        </section>
+
+    <!-- FEATURED PROJECTS -->
+        <section id="featured-projects">
+            <h3>Proyectos Destacados</h3>
+            <div class="project-grid">
+        
+                <div class="mini-card">
+                    <img src="assets/images/olist-executive.png" alt="Análisis Olist">
+                    <div class="mini-card-content">
+                        <h4>Análisis E-commerce Olist</h4>
+                        <p>Análisis estratégico de logística y retención de clientes para el marketplace más grande de Brasil.</p>
+                        <a href="projects/olist.html" class="link-btn">Ver caso de estudio →</a>
+                    </div>
+                </div>
+
+                <div class="mini-card">
+                    <img src="assets/images/space-track-thumb.png" alt="Análisis de desechos espaciales y congestión orbital">
+                    <div class="mini-card-content">
+                        <h4>Desechos Espaciales y Congestión Orbital</h4>
+                        <p>
+                            Proyecto de data storytelling que analiza el crecimiento de desechos orbitales,
+                            zonas de congestión y responsabilidad por país utilizando datos de Space-Track.
+                        </p>
+                        <a href="projects/space-track.html" class="link-btn">Ver caso de estudio →</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-icons">
+            <a href="mailto:zoirethl@gmail.com" title="Email">
+                <img 
+                    src="assets/images/gmail.png" 
+                    alt="Email"
+                    class="footer-icon"
+                >
+            </a>
+
+            <a href="https://www.linkedin.com/in/zoireth/" 
+               target="_blank" 
+               title="LinkedIn">
+                <img 
+                    src="assets/images/InBug-Black.png" 
+                    alt="LinkedIn"
+                    class="footer-icon"
+                    id="linkedin-icon"
+                >
+            </a>
+        </div>
+        <pp>&copy; 2026 Zoireth Liendo. Todos los derechos reservados.</pp>
+    </footer>
+
+
+<!-- SCRIPT LIGHT/DARK MODE -->
+    <script>
+        const toggleBtn = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        // Detectar preferencia inicial del usuario
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            body.classList.add('dark-mode');
+            toggleBtn.textContent = '🌒';
+        } else {
+            body.classList.remove('dark-mode');
+            toggleBtn.textContent = '🔆';
+        }
+
+        // Toggle manual
+        toggleBtn.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            toggleBtn.textContent = body.classList.contains('dark-mode') ? '🌒' : '🔆';
+        });
+    </script>
+
+<!-- SCRIPT ICON LIGHT/DARK -->
+<script>
+const linkedinIcon = document.getElementById('linkedin-icon');
+
+function updateLinkedInIcon() {
+    if (document.body.classList.contains('dark-mode')) {
+        linkedinIcon.src = 'assets/images/InBug-White.png';
+    } else {
+        linkedinIcon.src = 'assets/images/InBug-Black.png';
+    }
+}
+
+// Actualizar icono cuando cambia el tema
+document.getElementById('theme-toggle').addEventListener('click', updateLinkedInIcon);
+
+// Detectar tema del sistema al cargar
+window.addEventListener('DOMContentLoaded', () => {
+    updateLinkedInIcon();
+});
+</script>
+
+</body>
+</html>
