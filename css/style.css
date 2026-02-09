@@ -1,4 +1,4 @@
-/* Header - Funciona para todas las páginas */
+/* Header - para todas las páginas */
 header {
     background: white;
     border-bottom: 1px solid #ddd;
@@ -38,7 +38,7 @@ nav a {
     font-weight: bold;
 }
 
-/* Body - Solo para páginas de contenido general */
+/* Body */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -47,7 +47,7 @@ body {
     background-color: #f9f9f9;
 }
 
-/* Main - Para páginas de proyectos */
+/* Main  */
 main {
     max-width: 800px;
     margin: 0 auto;
