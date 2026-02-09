@@ -5,11 +5,11 @@
     --accent-color: #4f46e5;
     --link-hover: #3730a3;
     --bg-light: #ffffff;
-    --bg-dark: #2c2c2c;      /* gris oscuro más suave, cálido y menos fuerte */
+    --bg-dark: #1e1e1e;      /* gris oscuro más suave que #121212 */
     --card-light: #f9f9f9;
-    --card-dark: #383838;    /* ligeramente más claro que bg-dark para tarjetas */
+    --card-dark: #2a2a2a;    /* ligeramente más claro que el bg-dark para contraste */
     --text-light: #111111;
-    --text-dark: #dddddd;    /* gris claro, menos duro que blanco puro */
+    --text-dark: #e0e0e0;    /* un gris claro más suave que #eee */
 }
 
 /* =========================
@@ -318,6 +318,39 @@ footer {
     color: #6b7280;
     margin-top: 0.5rem;
 }
+
+/* Imágenes responsivas */
+.project-image img, 
+.mini-card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* centra la imagen */
+    border-radius: 8px; /* opcional, mismo estilo que tenías */
+}
+
+/* Secciones generales */
+section {
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 40px;
+    background-color: var(--bg-light);
+    color: var(--text-light);
+}
+
+/* Listas dentro de secciones */
+section ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+/* Dark mode */
+body.dark-mode section {
+    background-color: var(--card-dark); /* se adapta automáticamente */
+    color: var(--text-dark);
+}
+
 
 body.dark-mode .mini-meta {
     color: #9ca3af;
