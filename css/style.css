@@ -52,7 +52,7 @@ body {
 
 body.dark-mode {
     background-color: var(--bg-dark);
-    color: var(--link-primary);
+    color: var(--text-dark);
     --link-primary: #8b85ff;   /* un poco más luminoso */
     --link-primary-hover: #a5a0ff;
 }
@@ -169,7 +169,7 @@ h2 {
 
 body.dark-mode .mini-card {
     background-color: var(--card-dark);
-    color: var(--link-primary);
+    color: var(--text-dark);
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
 }
 body.dark-mode .mini-card:hover {
@@ -226,7 +226,6 @@ body.dark-mode .mini-card:hover {
     padding: 6px 12px;
     border-radius: 6px;
      transition: color 0.2s ease, transform 0.2s ease;
-     box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
 .link-btn:hover {
